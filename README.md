@@ -8,8 +8,18 @@
 wget -O 和风天气时钟插件安装.mp4 https://raw.githubusercontent.com/meimolihan/file/refs/heads/main/mp4/和风天气时钟插件安装.mp4
 ```
 
-* **CDN加速地址**    
+* **mp4--CDN加速地址**    
 **<https://cdn.jsdelivr.net/gh/meimolihan/file@v1.0.0/mp4/和风天气时钟插件安装.mp4>**
+
+* **jpg--CDN加速地址**    
+**<https://cdn.jsdelivr.net/gh/meimolihan/file@v1.0.0/img/git-01.jpg>**
+
+* **Markdown链接**
+```bash
+![](https://cdn.jsdelivr.net/gh/meimolihan/file@v1.0.0/img/git-01.jpg)
+```
+
+![](https://cdn.jsdelivr.net/gh/meimolihan/file@v1.0.0/img/git-01.jpg)
 
 * **CDN加速地址下载命令【cmd/ssh】**  
 ```bash
