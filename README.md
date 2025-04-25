@@ -4,11 +4,19 @@
 **<https://cdn.jsdelivr.net/gh/meimolihan/file@v1.0.0/img/git-01.jpg>**
 
 * **Markdown链接**
-```bash
+```markdown
+## 博客封面
 ![](https://cdn.jsdelivr.net/gh/meimolihan/file@v1.0.0/img/git-01.jpg)
+
+## 教程截图
+![](https://cdn.jsdelivr.net/gh/meimolihan/file@v1.0.0/screenshot/git-001.jpg)
 ```
 
 ![](https://cdn.jsdelivr.net/gh/meimolihan/file@v1.0.0/img/git-01.jpg)
+
+![](https://cdn.jsdelivr.net/gh/meimolihan/file@v1.0.0/screenshot/git-001.jpg)
+
+
 
 > jsdelivr-CDN加速地址
 >> `https://cdn.jsdelivr.net/gh/`  ## 免费CDN加速GitHub  
@@ -19,6 +27,24 @@
 >> `git-01.jpg`  ## 文件名
 
 ---
+
+
+
+# vercel 加速地址
+
+```markdown
+## 博客封面
+![](http://file.meimolihan.eu.org/img/git-01.jpg)
+
+## 教程截图
+![](http://file.meimolihan.eu.org/screenshot/git-001.jpg)
+```
+
+
+
+![](http://file.meimolihan.eu.org/img/git-01.jpg)
+
+![](http://file.meimolihan.eu.org/screenshot/git-001.jpg)
 
 # file-tags-push.bat
 
