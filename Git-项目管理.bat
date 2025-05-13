@@ -144,7 +144,8 @@ IF %ERRORLEVEL% EQU 0 (
     echo 标签 %tag_name% 推送失败，请手动检查。
 )
 echo ==============================
-
+pause
+goto MENU
 
 
 echo ==============================
