@@ -7,7 +7,7 @@ cls
 echo ==============================
 echo         Git 项目管理脚本
 echo ==============================
-echo 1. 检查Git仓库状态
+echo 1. 检查仓库的状态
 echo 2. 提交并推送更改
 echo 3. 拉取远程的更新
 echo 4. 提交并更新标签
@@ -32,14 +32,20 @@ if "%choice%"=="0" goto EXIT_SCRIPT
 
 echo ============= 检查Git仓库状态 =================
 :CHECK_STATUS
+cls
+echo ==============================
 echo 正在检查Git仓库状态...
+echo ==============================
 git status
+echo ==============================
 echo 检查完成！请根据提示确认文件状态。
+echo ==============================
 pause
 goto MENU
 
 echo ============= 提交并推送更改 =================
 :COMMIT_PUSH
+cls
 echo 提交并推送更改：
 set /p commit_msg=请输入提交信息（直接回车默认为 "update"）： 
 if "%commit_msg%"=="" set commit_msg=update
@@ -61,6 +67,7 @@ goto MENU
 
 echo ============= 拉取远程更新 =================
 :PULL_UPDATE
+cls
 echo 正在从远程仓库拉取更新...
 git pull
 if %errorlevel% equ 0 (
@@ -74,6 +81,7 @@ goto MENU
 
 echo ============= 提交并更新标签 =================
 :UPDATE_GIT_TAG
+cls
 REM 使用当前目录作为Git仓库路径
 SET REPO_PATH=%CD%
 
