@@ -53,23 +53,27 @@ IF %ERRORLEVEL% EQU 0 (
 )
 echo ===========================================
 
-REM 创建新标签 v1.0.0
-echo 正在创建新标签 v1.0.0，标签信息为 "为最新提交的重新创建标签"...
-git tag -a v1.0.0 -m "Recreate tags for the latest submission"
+REM 创建新标签
+set /p tag_name=请输入新标签名（直接回车默认标签名为 v1.0.0）:
+if "%tag_name%"=="" (
+    set tag_name=v1.0.0
+)
+echo 正在创建新标签 %tag_name%，标签信息为 "为最新提交的重新创建标签"...
+git tag -a %tag_name% -m "Recreate tags for the latest submission"
 echo ===========================================
 
 REM 推送新标签到远程仓库
-echo 正在将新的标签 v1.0.0 推送到远程仓库...
-git push origin v1.0.0
+echo 正在将新的标签 %tag_name% 推送到远程仓库...
+git push origin %tag_name%
 echo ===========================================
 
 REM 检查标签是否推送成功
-echo 检查标签 v1.0.0 是否推送成功...
-git tag -l | findstr /I "v1.0.0" >nul
+echo 检查标签 %tag_name% 是否推送成功...
+git tag -l | findstr /I "%tag_name%" >nul
 IF %ERRORLEVEL% EQU 0 (
-    echo 标签 v1.0.0 推送成功。
+    echo 标签 %tag_name% 推送成功。
 ) ELSE (
-    echo 标签 v1.0.0 推送失败，请手动检查。
+    echo 标签 %tag_name% 推送失败，请手动检查。
 )
 echo ===========================================
 
