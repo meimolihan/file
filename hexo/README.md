@@ -4,7 +4,7 @@
 
 **博客根目录：`/source/js/fomal.js`，搜索：`default-bg`**
 
-**打开 `fomal.js` 命令**
+**打开 `fomal.js` **（**Git Bash 命令**）
 
 ```bash
 start notepad "%USERPROFILE%\Desktop\GitHub\hexo\source\js\fomal.js"
