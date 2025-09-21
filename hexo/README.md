@@ -1,6 +1,6 @@
 # Hexo + Fomalhaut 四张壁纸
 
-
+**Github 项目地址：[https://github.com/meimolihan/file/tree/main/hexo](https://github.com/meimolihan/file/tree/main/hexo)**
 
 **博客根目录：`/source/js/fomal.js`，搜索：`default-bg`**
 
